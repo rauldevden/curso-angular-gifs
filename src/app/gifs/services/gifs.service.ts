@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-const GIPHY_KEY = ''
+const GIPHY_KEY = '6ukRs8hw0LpjN56WdWS7G346ze1cGAHL';
 
 @Injectable({providedIn: 'root'})
 export class GifsService {
