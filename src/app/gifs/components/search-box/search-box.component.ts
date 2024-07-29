@@ -7,7 +7,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
     <h5>Buscar:</h5>
     <input
       type="text"
-      (keydown.enter)="searchTag()"
+      (keydown.enter)="clickSearchTag()"
       #txtTagInput
       class="form-control"
       placeholder="Buscar gifs...">
@@ -23,7 +23,7 @@ export class SearchBoxComponent {
     private gifsService: GifsService,
   ) { }
 
-  searchTag(){
+  clickSearchTag(){
     const newTag = this.tagInput.nativeElement.value;
 
     this.gifsService.searchTag(newTag);
